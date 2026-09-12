@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: smartspend-backend
+    runtime: java
+    rootDir: backend
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/smartspend-backend-1.0.0.jar
+    envVars:
+      - key: DB_URL
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRATION_HOURS
+        value: "24"
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false
+
+  - type: web
+    name: smartspend-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: ""
+    staticPublishPath: .

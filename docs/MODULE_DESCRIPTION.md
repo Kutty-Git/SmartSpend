@@ -1,0 +1,3 @@
+# Module Description
+
+Authentication registers users, hashes passwords, and issues JWTs. Expense and income modules implement user-scoped CRUD. Categories are visible to all users and editable by admins. Budgets store month/year targets and calculate used, remaining, percentage, and status from expenses. Dashboard aggregates totals and month comparison. Insights are deterministic rules for category concentration and budget pressure. Notifications support read state. Reports use OpenPDF to produce a downloadable monthly PDF. Admin APIs expose password-safe user statistics, activation, categories, audit-log viewing, and a read-only dashboard view for a selected user. The static frontend consumes these REST APIs with Fetch.

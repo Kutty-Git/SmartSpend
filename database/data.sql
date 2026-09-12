@@ -1,0 +1,2 @@
+-- Seed data is inserted by SeedConfig when the application starts.
+-- Demo admin credentials are documented in README.md for local/demo use only.

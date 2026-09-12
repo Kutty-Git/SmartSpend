@@ -1,0 +1,5 @@
+-- SmartSpend deployment database
+-- PostgreSQL is used for the Render deployment.
+-- The application creates/updates the tables through Spring Data JPA + Hibernate
+-- with spring.jpa.hibernate.ddl-auto=update.
+-- Main tables: users, category, expense, income, budget, notification, audit_log, savings_goal.
